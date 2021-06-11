@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.6fr 0.8fr 1fr;
+  grid-template-rows: 0.7fr 0.7fr;
+  align-content: center;
+  grid-gap: 3px;
+  background-color: var(--ion-color-secondary);
+  padding: 3px;
+  grid-template-areas:
+    "Dia Hora Icono"
+    "Pelicula Pelicula Icono";
+}
+
+.container > div {
+  background-color: var(--ion-background-color);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.Dia {
+  grid-area: Dia;
+}
+
+.Hora {
+  grid-area: Hora;
+}
+
+.Icono {
+  grid-area: Icono;
+  background-color: var(--ion-color-secondary) !important;
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
+  place-self: center;
+}
+
+.Pelicula {
+  grid-area: Pelicula;
+}
+
+ion-icon {
+  font-size: 100px;
+}

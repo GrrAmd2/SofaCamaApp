@@ -1,0 +1,7 @@
+<ion-slides pager="false" [options]="slideOpts" mode="md">
+  <ng-container *ngFor="let image of imageSlide">
+    <ion-slide>
+      <img [src]="image.urlImage" alt="">
+    </ion-slide>
+  </ng-container>
+</ion-slides>
